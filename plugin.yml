@@ -1,0 +1,34 @@
+name: ZeusMode
+main: TheNewHEROBRINE\ZeusMode\Main
+api: ["1.13.1", "2.0.0"]
+version: 1.0.0
+author: TheNewHEROBRINE
+
+commands:
+ lightning:
+  usage: /lightning [<player>|<x> <y> <z>]
+  description: Command to strike a player by a lightning
+  permission: zeusmode.command.lightning
+ zeusmode:
+  usage: /zeusmode <on>|<off> [ticks]
+  description: When enabled lightnings will spawn on the player
+  permission: zeusmode.command.zeusmode
+
+permissions:
+ zeusmode:
+  default: op
+  description: "Allows using all ZeusMode features"
+  children:
+   zeusmode.projectile:
+    default: op
+    description: "Allows you to spawn lightnings by arrows, snowballs etc"
+   zeusmode.command:
+    default: op
+    description: "Allows using all the commands"
+    children:
+     zeusmode.command.lightning:
+      default: op
+      description: "Allows using /lightning command"
+     zeusmode.command.zeusmode:
+      default: op
+      description: "Allows using /zeusmode command"
