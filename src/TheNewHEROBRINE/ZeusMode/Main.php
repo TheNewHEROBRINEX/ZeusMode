@@ -17,7 +17,7 @@ class Main extends PluginBase implements Listener{
     /*
         ZeusMode by TheNewHEROBRINE (kik: TheNewHEROBRINEX)
 
-		88888888888 888               888b    888                        
+       	88888888888 888               888b    888                        
     		888     888               8888b   888                        
     		888     888               88888b  888                        
     		888     88888b.   .d88b.  888Y88b 888  .d88b.  888  888  888 
