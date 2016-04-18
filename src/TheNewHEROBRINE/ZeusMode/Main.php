@@ -78,7 +78,7 @@ class Main extends PluginBase implements Listener{
 				switch (count($args)) {
 					case '0':
 						if (!$sender instanceof Player) {
-							$sender->sendMessage("§cUSAGE: /lightning <player>|<x> <y> <z>");
+							$sender->sendMessage("§cUSAGE: /lightning <player>|/*//TODO<x> <y> <z>*/");
 							return true;
 						}
 						$this->strikeLightning($sender->getPosition());
@@ -88,7 +88,7 @@ class Main extends PluginBase implements Listener{
 						$target = $this->getServer()->getPlayer($args[0]);
 
 						if(!$target){
-							$sender->sendMessage("§cPlayer " . $args[0] . "not found");
+							$sender->sendMessage("§cPlayer " . $args[0] . " not found");
 							return true;
 						}
 						$this->strikeLightning($target->getPosition());
